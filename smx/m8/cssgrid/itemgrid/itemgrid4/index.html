@@ -22,9 +22,14 @@ html, body {
 }
 
 .explorer {
+    display: grid;
     list-style-type: none;
     margin: auto;
     width: 75%;
+    grid-template-columns: repeat(auto-fit, mixmax(250px, 1fr));
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 1%;
+
 }
 
 .explorer li {
@@ -32,8 +37,8 @@ html, body {
     display: flex;
     justify-items: center;
 }
-
 .explorer li img {
+    
     width: 100%;
 }
 </style>
